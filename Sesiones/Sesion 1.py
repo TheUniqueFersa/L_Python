@@ -2,10 +2,11 @@
 
 #Declarar una función:
 def saluda(nombre):
-    #edad = input ("¿Cuál es tu edad? ")
-    edad = 23
-    k=0
-    print(id(nombre), id(edad))
+    edad = input ("¿Cuál es tu edad? ")
+    print(f"""
+    Hola! Soy {nombre}, id en función->{id(nombre)}(Mismo que el original)\nMi edad es {edad}, tipo->{type(edad)}, id-> {id(edad)}
+Apoco si
+          """)
 
 def suma(x):
     print(id(x))
@@ -20,14 +21,11 @@ res = suma(v)
 print(type(res))
 print(res)
 #---------------------------------
-#Comentario de bloque
-
-
 """
 Comentario de bloque 
 (realmente es una cadena multilínea)
 """
-
+#------------------------------------
 nombre = 'fersa'
 
 #Imprimir con formato
@@ -45,34 +43,33 @@ cadena = f"Hola soy {cadena_1} {cadena_0}"
 #Otra forma de formatear
 cadena = "Hola soy {}{}".format(cadena_1, cadena_0)
 #Nótese que la f indica un formato
-
+#------------------------------------
 
 #Input te añade un salto de línea implicito:
 print("ID original: ", id(nombre))
 saluda(nombre)
 
-
+#------------------------------------
 #Estructuras de control básicas:
 #For
     #El range es un objeto
 for k in range(0,3):
-    print("XD")
+    print(f"{k}", end=', ')
 for k in [0,1,0,1,0,1]:
-    print("XD")
+    print("{}".format(k), end=", ")
     #Hace 6 impresiones
 for k in [0,1,2.5,"que onda", 0]:
-    print(f"Apoco si tilin: {k}")
+    print(f"Para cada iteración: {k}")
 
 k=0
 #while  
 while k<3:
     print(f"El tilinazo de {nombre}", end=' ')
+    k=k+1
 
 #if
-if k<30:
-    print(f"Nombre")
 
-#no esxiste switch pipIPI, pero existen los DICCIONARIOS :)
+#no existe switch pipIPI, pero existen los DICCIONARIOS :)
 
 #Listas
 [0,1,2]
