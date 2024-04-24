@@ -1,12 +1,10 @@
-#Por fin python!! Comentario de línea
+#Por fin python!! (Comentario de línea)
 
 #Declarar una función:
-
 def saluda(nombre):
     #edad = input ("¿Cuál es tu edad? ")
     edad = 23
     k=0
-        
     print(id(nombre), id(edad))
 
 def suma(x):
@@ -26,24 +24,32 @@ print(res)
 
 
 """
-Q
+Comentario de bloque 
+(realmente es una cadena multilínea)
 """
 
 nombre = 'fersa'
-#print("XDDDDD")
 
 #Imprimir con formato
 print(f"Hola {nombre}")
+
+#Cadenas concatenadas
+cadena_0 = "formateada"
+cadena_1 = "una cadena "
+cadena = "Hola soy " + cadena_1 + cadena_0
+print(cadena)
+
+#Cadenas formateadas: (LA MEJOR)
+cadena = f"Hola soy {cadena_1} {cadena_0}"
+
+#Otra forma de formatear
+cadena = "Hola soy {}{}".format(cadena_1, cadena_0)
 #Nótese que la f indica un formato
 
-
-cadena = "Soy una cadena"
-#cadena2 = `Papu no soy cadena :v`
 
 #Input te añade un salto de línea implicito:
 print("ID original: ", id(nombre))
 saluda(nombre)
-
 
 
 #Estructuras de control básicas:
