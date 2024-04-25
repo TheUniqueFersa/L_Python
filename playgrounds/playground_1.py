@@ -46,3 +46,21 @@ division_natural = 10//3 #Devuelve un class 'int' :o
 print(f"{division_natural} es de tipo {type(division_natural)}")
 potencia = 10**2 #Devuelve un class='int'
 print(f"{potencia} es de tipo {type(potencia)}")
+
+#Repeticion de una cadena lol
+guat = "Fersi" * 5 #Devuelve un class='str'
+print(f"{guat} es de tipo {type(guat)}")
+
+#TIPOS DE DATOS
+
+cadena = "Soy una cadena"
+cadena_2 = 'yo tambien'
+entero = 16
+booleano = True
+flotante = 4.2
+flout = 0.00000000004 #notación científica
+flout_2 = 500000000000000000.0 #notación científica
+
+print("Los tipos de datos son: ")
+print(type(cadena), type(entero), type(booleano), type(flotante), type(flout), type(flout_2))
+print(flout, flout_2)
