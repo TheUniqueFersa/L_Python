@@ -29,6 +29,7 @@ def pruebasApuntes():
 # -----------------------------------------------------------------
 #pruebasApuntes()
 # 1. Hacer un programa que identifique entre pares y nones
+
 def evenOrOdd(x):
     if entrada == 0:
         print("Soy cero")
@@ -36,23 +37,45 @@ def evenOrOdd(x):
         print("El número {} es par".format(entrada))
     else:
         print("El número {} es impar".format(entrada))
-
-entrada = ""
-#while entrada.__class__ != type(1) and entrada != -1:
-entrada = input("Ingresa un numero: ")
-print(entrada.__class__, type(1))
-while entrada != "Ya estuvo": 
-    #print(entrada.__class__) #Prueba
-    """
-    if entrada.__class__ == type(1):
+def ejercicio1():
+    entrada = ""
+    #while entrada.__class__ != type(1) and entrada != -1:
+    entrada = input("Ingresa un numero: ")
+    print(entrada.__class__, type(1))
+    while entrada != "Ya estuvo": 
+        #print(entrada.__class__) #Prueba
+        """
+        if entrada.__class__ == type(1):
+            entrada = int(entrada)
+            evenOrOdd(entrada)
+        else:
+            print("Dato inválido. ")
+        """
         entrada = int(entrada)
         evenOrOdd(entrada)
-    else:
-        print("Dato inválido. ")
-    """
-    entrada = int(entrada)
-    evenOrOdd(entrada)
-    entrada = input("Ingresa un numero entero: ")
-print("Ya me salí")
+        entrada = input("Ingresa un numero entero: ")
+    print("Ya me salí")
+#ejercicio1()
 # -----------------------------------------------------------------
 #Ejercicio 2. 
+def ejercicio2():
+    user_option = input('rock, paper, scissors => ')
+    computer_option = 'paper'
+    if user_option == computer_option:
+        print('Draw!')
+    elif user_option=='rock':
+        if computer_option=='scissors':
+            print("Rock wins scissors")
+            print("User won!")
+        else:
+            print("Paper wins scissors")
+            print("Computer won!")
+    """
+    entrada = input("Ingresa un numero: ")
+    while entrada != "Ya estuvo": 
+        entrada = int(entrada)
+        entrada = input("Ingresa un numero entero: ")
+    print("Ya me salí")
+    """
+
+ejercicio2()
