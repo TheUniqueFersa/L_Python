@@ -28,4 +28,20 @@ def pruebasApuntes():
 
 # EJERCICIOS
 # -----------------------------------------------------------------
-pruebasApuntes()
+#pruebasApuntes()
+# 1. Hacer un programa que identifique entre pares y nones
+
+entrada = ""
+#while entrada.__class__ != type(1) and entrada != -1:
+entrada = int(input("Ingresa un numero: "))
+while entrada != "Ya estuvo": 
+    #print(entrada.__class__) #Prueba
+    entrada = int(entrada)
+    if entrada == 0:
+        print("Soy cero")
+    elif entrada % 2 == 0:
+        print("El número {} es par".format(entrada))
+    else:
+        print("El número {} es impar".format(entrada))
+    entrada = input("Ingresa un numero: ")
+print("Ya me salí")
