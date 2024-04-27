@@ -1,4 +1,3 @@
-
 #ALGUNOS APUNTES
 # -----------------------------------------------------------------
 #Sobre Operadores lógicos
@@ -30,18 +29,30 @@ def pruebasApuntes():
 # -----------------------------------------------------------------
 #pruebasApuntes()
 # 1. Hacer un programa que identifique entre pares y nones
-
-entrada = ""
-#while entrada.__class__ != type(1) and entrada != -1:
-entrada = int(input("Ingresa un numero: "))
-while entrada != "Ya estuvo": 
-    #print(entrada.__class__) #Prueba
-    entrada = int(entrada)
+def evenOrOdd(x):
     if entrada == 0:
         print("Soy cero")
     elif entrada % 2 == 0:
         print("El número {} es par".format(entrada))
     else:
         print("El número {} es impar".format(entrada))
-    entrada = input("Ingresa un numero: ")
+
+entrada = ""
+#while entrada.__class__ != type(1) and entrada != -1:
+entrada = input("Ingresa un numero: ")
+print(entrada.__class__, type(1))
+while entrada != "Ya estuvo": 
+    #print(entrada.__class__) #Prueba
+    """
+    if entrada.__class__ == type(1):
+        entrada = int(entrada)
+        evenOrOdd(entrada)
+    else:
+        print("Dato inválido. ")
+    """
+    entrada = int(entrada)
+    evenOrOdd(entrada)
+    entrada = input("Ingresa un numero entero: ")
 print("Ya me salí")
+# -----------------------------------------------------------------
+#Ejercicio 2. 
