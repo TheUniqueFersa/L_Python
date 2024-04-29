@@ -60,16 +60,26 @@ def ejercicio1():
 #Ejercicio 2. 
 def ejercicio2():
     user_option = input('rock, paper, scissors => ')
-    computer_option = 'paper'
+    computer_option = 'scissors'
     if user_option == computer_option:
         print('Draw!')
     elif user_option=='rock':
         if computer_option=='scissors':
-            print("Rock wins scissors")
+            print("Rock beats scissors")
             print("User won!")
         else:
-            print("Paper wins scissors")
+            print("Paper beats rock")
             print("Computer won!")
+    elif user_option=='paper':
+        if computer_option=='rock':
+            print("Paper beats rock\nUser won!")
+        else:
+            print("Scissors beat paper\nComputer won!")
+    elif user_option=='scissors':
+        if computer_option =='paper':
+            print("Scissors beat paper\nUser won!")
+        else:
+            print("Rock beats scissors\nComputer won!")
     """
     entrada = input("Ingresa un numero: ")
     while entrada != "Ya estuvo": 
@@ -79,3 +89,4 @@ def ejercicio2():
     """
 
 ejercicio2()
+
