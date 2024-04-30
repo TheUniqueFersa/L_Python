@@ -1,5 +1,6 @@
 def tipo(dato, cadena):
     print(f"-> El dato {cadena}, es un {type(dato)}")
+    return 0
 # Las operaciones si respetan tipos de datos, es decir, deben ser entre los mismos tipos de datos, 
 #por lo menos lo menciono porque str con int no se puede concatenar así nada más
 age = input("Ingresa una edad: ")
