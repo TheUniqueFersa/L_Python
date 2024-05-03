@@ -14,6 +14,16 @@ print(texto[len(texto)-1]) #Línea que hace lo mismo que la de arriba
 el índice máximo para cualquier arreglo es el numero n (tamaño) - 1
 '''
 
+# -------------
+# SLICING
+print(texto[0:5]) #Desde la posición 0 hasta la 5, sin contar el límite superior
+print(texto[10:16])
+
+
+print(texto[:10])
+print(texto[5:])
+
+
 
 # ----------------------------------------------------------------------
 # Ejercicios
