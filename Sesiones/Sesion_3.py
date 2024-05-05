@@ -30,7 +30,7 @@ def pruebasApuntes():
 #pruebasApuntes()
 # 1. Hacer un programa que identifique entre pares y nones
 
-def evenOrOdd(x):
+def evenOrOdd(entrada):
     if entrada == 0:
         print("Soy cero")
     elif entrada % 2 == 0:
